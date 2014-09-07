@@ -8,7 +8,7 @@ usage
 -----
 First, include `lightblocks.css` and `lightblocks.js` with your page.
 
-Then, run `lightblocks.create()` after the images have loaded on the element that contains your images. Make sure to also add the `lightblocks` class to the element.
+Then, run `lightblocks.create()` after on the element that contains your images. Make sure to also add the `lightblocks` class to the element, and to only run `create()` after the images have loaded.
 
 ```JavaScript
 window.onload = function() {
@@ -16,4 +16,7 @@ window.onload = function() {
 };
 ```
 
-lightblocks.js will load a high resolution image from the url specified in the `data-highres` attribute.
+A high resolution image will be loaded in lightbox mode from the url specified in the `data-highres` attribute.
+```HTML
+<img src="//mysite.com/awesome.jpg" data-highres="//mysite.com/awesomer.jpg" />
+```
